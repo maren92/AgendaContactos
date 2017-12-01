@@ -226,6 +226,6 @@ packages.lnk
 *.csproj.user
 *.bat
 
-/AgendaContactos/AgendaContactos.FrontEnd/node_modules/
-/AgendaContactos/AgendaContactos.FrontEnd/wwwroot/*
-/AgendaContactos/AgendaContactos.FrontEnd/angularApp/*.js
+AgendaContactos.FrontEnd/node_modules/
+AgendaContactos.FrontEnd/wwwroot/*
+AgendaContactos.FrontEnd/angularApp/*.js
