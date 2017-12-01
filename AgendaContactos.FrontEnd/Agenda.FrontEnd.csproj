@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="angularApp\app\agenda\agenda.routes.ts" />
+    <None Remove="angularApp\app\agenda\components\agenda.component.ts" />
+    <None Remove="angularApp\app\agenda\components\contacto\contacto.component.ts" />
+    <None Remove="angularApp\app\agenda\components\contacto\contacto.module.ts" />
+    <None Remove="angularApp\app\agenda\components\contacto\contacto.routes.ts" />
+    <None Remove="angularApp\app\agenda\components\contacto\index_contacto.component.ts" />
+    <None Remove="angularApp\app\agenda\components\grupo\grupo.component.ts" />
+    <None Remove="angularApp\app\core\services\contacto.service.ts" />
+    <None Remove="angularApp\app\models\contacto.ts" />
+    <None Remove="angularApp\app\models\Grupo.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="angularApp\app\agenda\agenda.module.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\agenda.routes.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\components\agenda.component.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\components\contacto\add_edit_contacto.component.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\components\contacto\contacto.component.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\components\contacto\contacto.module.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\components\contacto\contacto.routes.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\components\contacto\index_contacto.component.ts" />
+    <TypeScriptCompile Include="angularApp\app\agenda\components\grupo\grupo.component.ts" />
+    <TypeScriptCompile Include="angularApp\app\core\services\contacto.service.ts" />
+    <TypeScriptCompile Include="angularApp\app\models\contacto.ts" />
+    <TypeScriptCompile Include="angularApp\app\models\grupo.ts" />
+  </ItemGroup>
+
+</Project>

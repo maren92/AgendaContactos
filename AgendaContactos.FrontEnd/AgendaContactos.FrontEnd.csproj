@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="angularApp\app\loging\**" />
+    <Content Remove="angularApp\app\loging\**" />
+    <EmbeddedResource Remove="angularApp\app\loging\**" />
+    <None Remove="angularApp\app\loging\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="angularApp\app\models\contactoCompleto.ts" />
+    <None Remove="angularApp\app\models\grupoCompleto.ts" />
+    <None Remove="angularApp\app\models\grupoContactos.ts" />
+    <None Remove="angularApp\app\models\telefono.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="angularApp\app\core\services\auth_guard.service.ts" />
+    <TypeScriptCompile Include="angularApp\app\models\contactoCompleto.ts" />
+    <TypeScriptCompile Include="angularApp\app\models\grupoCompleto.ts" />
+    <TypeScriptCompile Include="angularApp\app\models\grupoContactos.ts" />
+    <TypeScriptCompile Include="angularApp\app\models\telefono.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>

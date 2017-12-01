@@ -1,0 +1,36 @@
+﻿<div class="d-flex">
+    <h3 class="card-title p-2">{{ message }}</h3>
+    <div class="ml-auto p-2">
+        <a class="btn btn-outline-info" routerLink="add">Insertar Contacto</a>
+    </div>
+</div>
+<div *ngIf="contactos.length > 0">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre y Apellidos</th>
+                    <th>Correo electrónico</th>
+                    <th>Alias</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let contacto of contactos; let i = index">
+                    <td>{{contacto.nombreApe}}</td>
+                    <td>{{contacto.correo}}</td>
+                    <td>{{contacto.alias}}</td>
+                    <td>{{contacto.direccion}}</td> 
+                    <td class="text-right">
+                        <a [routerLink]="['edit', contacto.id]"><i class="fa fa-edit"></i></a>
+                        <a href="javascript:void(0)" (click)="deleteContacto(contacto)"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div *ngIf="contactos.length <= 0">
+    <span>No hay contactos registrados</span>
+</div>

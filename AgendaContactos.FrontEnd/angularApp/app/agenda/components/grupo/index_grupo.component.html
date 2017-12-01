@@ -1,0 +1,30 @@
+﻿<div class="d-flex">
+    <h3 class="card-title p-2">{{ message }}</h3>
+    <div class="ml-auto p-2">
+        <a class="btn btn-outline-info" routerLink="add">Insertar Grupo</a>
+    </div>
+</div>
+<div *ngIf="grupos.length > 0">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre del Grupo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let grupo of grupos; let i = index">
+                    <td>{{grupo.nombre}}</td>
+                    <td class="text-right">
+                        <a [routerLink]="['edit', grupo.id]"><i class="fa fa-edit"></i></a>
+                        <a href="javascript:void(0)" (click)="deleteGrupo(grupo)"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div *ngIf="grupos.length <= 0">
+    <span>No hay grupos registrados</span>
+</div>

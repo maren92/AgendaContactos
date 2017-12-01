@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background: #d5dadd;
+}
+
+a {
+    color: rgb(3, 24, 122);
+}
+
+a:hover {
+    color: #62d1fb;
+}
+
+.custom-control-input:checked ~ .custom-control-indicator {
+    background-color: #2a983d !important;
+}
+
+.custom-control-input:focus ~ .custom-control-indicator {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(44, 219, 44, 0.25);
+}
+
+header {
+    z-index: 1030;
+    color: #fff;
+    background-color: rgb(3, 24, 122);
+    top: 0;
+    margin-left: 200px;
+    margin-right: 190px;
+}
+
+.navbar-brand {
+    width: 180px;
+    color: #fff !important;
+    padding-left: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+.navbar-user {
+    width: 500px;
+    color: #fff !important;
+    padding-left: 400px;
+}
+li.header {
+    position: relative;
+    color: #fff;
+    margin-top: 10px;
+}
+
+li.header:hover {
+    background: none;
+}
+
+.nav-link, aside a {
+    color: #fff !important;
+    padding-left: 300px;
+    margin-right: 40px;
+}
+
+.content {
+    padding-top: 2px;
+    padding-left: 200px;
+    padding-right: 190px;
+}
+
+.nav-login {
+    color: #fff !important;
+    padding-left: 800px;
+    margin-right: 40px;
+}
+section.content {
+    margin-left: 230px;
+    padding-left: 10px;
+    min-height: 650px;
+    padding-top: 65px;
+    margin-top:200px;
+    -webkit-transition: margin-left .3s ease-in-out;
+    -moz-transition: margin-left .3s ease-in-out;
+    -o-transition: margin-left .3s ease-in-out;
+    transition: margin-left .3s ease-in-out;
+
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-left: 200px;
+    margin-right: 190px;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+    bottom: 0;
+    z-index: 1030;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    line-height: 40px; /* Vertically center the text there */
+    background-color: rgb(3, 24, 122);
+    text-align: center;
+    color: #fff;
+}
+
+header span {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: fff;
+}
+
+.nitem {
+    margin-left: 400px;
+    color: fff;
+}
+

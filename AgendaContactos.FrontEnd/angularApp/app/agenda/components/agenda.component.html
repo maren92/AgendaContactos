@@ -1,0 +1,28 @@
+﻿<ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="ngb-panel-0">
+    <ngb-panel id="static-1">
+        <ng-template ngbPanelTitle>
+            <div class="card">
+                <a class="btn btn-outline-info" [routerLink]="['contacto']">&#9733; <b>Mis contactos</b> &#9733;</a>
+            </div>
+        </ng-template>
+        <ng-template ngbPanelContent>
+            <div class="card-body">
+                <router-outlet></router-outlet>
+            </div>
+        </ng-template>
+    </ngb-panel>
+
+    <ngb-panel>
+        <ng-template ngbPanelTitle>
+            <div class="card">
+                <a class="btn btn-outline-info" [routerLink]="['grupo']">&#9733; <b>Mis grupos</b> &#9733;</a>
+            </div>
+        </ng-template>
+        <ng-template ngbPanelContent>
+            <div class="card-body">
+                <router-outlet></router-outlet>
+            </div>
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>
+

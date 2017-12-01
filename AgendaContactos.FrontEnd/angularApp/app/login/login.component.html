@@ -1,0 +1,20 @@
+﻿<div class="card">
+    <div class="card-header">Autenticación</div>
+    <div class="card-body">
+        <div class="form-control">
+            <form (ngSubmit)="Autenticarse()">
+                <div class="form-group">
+                    <label for="user">Nombre de usuario</label>
+                    <input class="form-control mr-sm-2" [(ngModel)]="usuario" name="usuario" type="text" data-toggle="tooltip" data-placement="top" title="Usuario">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input class="form-control mr-sm-2" [(ngModel)]="pass" name="pass" type="password" data-toggle="tooltip" data-placement="top" title="Contraseña">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-outline-info ml-auto" type="submit">Iniciar sesión</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

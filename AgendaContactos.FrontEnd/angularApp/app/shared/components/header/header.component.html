@@ -1,0 +1,13 @@
+﻿<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a [routerLink]="['home']" class="navbar-brand">{{titulo}}</a>
+        <a [routerLink]="['agenda']" class="nitem text-white" *ngIf="logueado">Agenda</a>
+        <span *ngIf="!logueado">
+            <a class="text-white" [routerLink]="['login']">Autenticarse</a>
+        </span>
+        <span *ngIf="logueado">
+            Bienvenido!
+            <a class="text-white" [routerLink]="['login']" *ngIf="logueado" (click)="CerrarSesion()">Cerrar Sesión</a>
+        </span>
+    </nav>
+</header>
