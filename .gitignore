@@ -227,5 +227,5 @@ packages.lnk
 *.bat
 
 /AgendaContactos/AgendaContactos.FrontEnd/node_modules/
-/AgendaContactos/AgendaContactos.FrontEnd/wwwroot/
+/AgendaContactos/AgendaContactos.FrontEnd/wwwroot/*
 /AgendaContactos/AgendaContactos.FrontEnd/angularApp/*.js
