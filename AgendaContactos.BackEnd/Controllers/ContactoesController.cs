@@ -166,7 +166,7 @@ namespace AgendaContactos.BackEnd.Controllers
 
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetContacto", new { id = contacto.Contacto.Id }, contacto.Contacto);
+            return NoContent();
         }
 
         // DELETE: api/Contactoes/5
